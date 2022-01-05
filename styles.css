@@ -1,0 +1,166 @@
+/** @format */
+@font-face {
+  font-family: outfits;
+  src: url(fonts/Outfit-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 54%, 11%);
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  font-family: outfits;
+}
+
+.container {
+  max-width: 350px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.container > img {
+  width: 290px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.view {
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2rem;
+  background-color: rgba(0, 255, 247, 0.5);
+  opacity: 0;
+}
+
+.view:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.details {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.details h3 {
+  color: hsl(0, 0%, 100%);
+  padding: 1.5rem 0;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.details h3:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.details p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+  padding-bottom: 1rem;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.cyan {
+  display: flex;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+  font-weight: 300;
+}
+
+.cyan p {
+  margin-left: 8px;
+}
+.order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+.order p {
+  color: hsl(215, 51%, 70%);
+  margin-left: 8px;
+}
+
+.horizontal {
+  height: 1px;
+  width: 100%;
+  background-color: hsl(215, 51%, 70%);
+  margin-top: 1.5rem;
+  border: none;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+
+  margin-top: 1rem;
+}
+
+.footer img {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.footer p {
+  color: hsl(215, 51%, 70%);
+  font-size: 14px;
+}
+
+.footer p a {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 2px;
+}
+
+.footer a:hover {
+  color: hsl(178, 100%, 50%);
+}
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  font-size: 10px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 357px) {
+  body {
+    height: 100vh;
+  }
+}
